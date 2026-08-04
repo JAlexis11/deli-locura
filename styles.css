@@ -1,0 +1,115 @@
+/* Fuente y estilo general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #111;
+    color: #fff;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff6a00, #ff0000);
+}
+
+.logo {
+    max-width: 180px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.slogan {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Secciones del menú */
+.section {
+    background: #1b1b1b;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ff6a00;
+}
+
+.section h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.section ul li::before {
+    content: "•";
+    color: #ff6a00;
+    position: absolute;
+    left: 0;
+}
+
+/* Info de contacto */
+.info p {
+    margin-bottom: 5px;
+}
+
+/* QR */
+.qr-section {
+    text-align: center;
+}
+
+.qr-section p {
+    margin-bottom: 10px;
+}
+
+.qr {
+    max-width: 180px;
+    border: 2px solid #ff6a00;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
