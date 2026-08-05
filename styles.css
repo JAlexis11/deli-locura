@@ -84,6 +84,43 @@ body {
     left: 0;
 }
 
+/* Items de menú con precio */
+.menu-list {
+    margin-left: 0;
+}
+
+.menu-item {
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+
+.menu-item::before {
+    content: none;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    color: #ffcc00;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.item-desc {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-top: 2px;
+}
+
 /* Info de contacto */
 .info p {
     margin-bottom: 5px;
