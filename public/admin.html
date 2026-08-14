@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Deli Locura</title>
+    <link rel="icon" type="image/png" href="imagen/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="header">
+        <img src="imagen/logo.png" alt="Deli Locura" class="logo">
+        <h1>Panel de administrador</h1>
+    </header>
+
+    <main class="container">
+        <section id="login-view" class="section" style="max-width:400px;margin:40px auto;">
+            <h2>Iniciar sesión</h2>
+            <form id="login-form" class="admin-form">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required autocomplete="current-password">
+                <button type="submit">Entrar</button>
+                <p id="login-error" class="admin-error"></p>
+            </form>
+        </section>
+
+        <section id="admin-view" class="section" style="display:none;">
+            <div class="admin-toolbar">
+                <h2>Editar menú</h2>
+                <div>
+                    <button id="add-section-btn" type="button">+ Nueva sección</button>
+                    <button id="save-btn" type="button" class="admin-save">Guardar cambios</button>
+                    <button id="logout-btn" type="button" class="admin-logout">Cerrar sesión</button>
+                </div>
+            </div>
+            <p id="save-status" class="admin-status"></p>
+
+            <div class="admin-block">
+                <h3>Encabezado</h3>
+                <label>Título del sitio</label>
+                <input type="text" id="header-title">
+                <label>Eslogan</label>
+                <input type="text" id="header-slogan">
+            </div>
+
+            <div id="sections-container"></div>
+
+            <div class="admin-block">
+                <h3>Contacto</h3>
+                <label>Dirección</label>
+                <input type="text" id="contact-address">
+                <label>WhatsApp (solo números, con código de país. Ej: 593960946686)</label>
+                <input type="text" id="contact-whatsapp">
+                <label>Instagram (usuario, sin @)</label>
+                <input type="text" id="contact-instagram">
+                <label>Facebook (usuario)</label>
+                <input type="text" id="contact-facebook">
+            </div>
+
+            <div class="admin-block">
+                <h3>Cambiar contraseña</h3>
+                <form id="password-form" class="admin-form">
+                    <label>Contraseña actual</label>
+                    <input type="password" id="current-password" autocomplete="current-password">
+                    <label>Nueva contraseña</label>
+                    <input type="password" id="new-password" autocomplete="new-password">
+                    <button type="submit">Actualizar contraseña</button>
+                    <p id="password-status" class="admin-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <template id="section-template">
+        <div class="admin-section-block">
+            <div class="admin-section-header">
+                <input type="text" class="section-title-input" placeholder="Título de la sección">
+                <select class="section-type-select">
+                    <option value="simple">Lista simple</option>
+                    <option value="menu">Lista con precios</option>
+                </select>
+                <button type="button" class="remove-section-btn">Eliminar sección</button>
+            </div>
+            <label>Imagen (ruta, opcional)</label>
+            <input type="text" class="section-image-input" placeholder="imagen/ejemplo.png">
+            <div class="items-container"></div>
+            <button type="button" class="add-item-btn">+ Agregar item</button>
+        </div>
+    </template>
+
+    <template id="simple-item-template">
+        <div class="admin-item-row">
+            <input type="text" class="item-text-input" placeholder="Texto del item">
+            <button type="button" class="remove-item-btn">✕</button>
+        </div>
+    </template>
+
+    <template id="menu-item-template">
+        <div class="admin-item-row admin-item-row-menu">
+            <input type="text" class="item-name-input" placeholder="Nombre">
+            <input type="text" class="item-price-input" placeholder="$0,00">
+            <input type="text" class="item-desc-input" placeholder="Descripción (opcional)">
+            <button type="button" class="remove-item-btn">✕</button>
+        </div>
+    </template>
+
+    <script src="admin.js"></script>
+</body>
+</html>

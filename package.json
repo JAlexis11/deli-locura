@@ -1,0 +1,17 @@
+{
+  "name": "deli-locura",
+  "version": "1.0.0",
+  "description": "Menu de Deli Locura con panel de administrador",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-session": "^2.1.0",
+    "express": "^4.19.2"
+  }
+}

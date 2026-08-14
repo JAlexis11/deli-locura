@@ -134,6 +134,15 @@ body {
     margin-bottom: 5px;
 }
 
+.info a {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.info a:hover {
+    color: #fff;
+}
+
 /* QR */
 .qr-section {
     text-align: center;

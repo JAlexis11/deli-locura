@@ -1,0 +1,141 @@
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-form label,
+.admin-block label {
+    font-size: 0.85rem;
+    color: #ffcc00;
+    margin-top: 6px;
+}
+
+.admin-form input,
+.admin-block input,
+.admin-block select,
+.section-title-input,
+.section-image-input,
+.item-text-input,
+.item-name-input,
+.item-price-input,
+.item-desc-input {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background: #1b1b1b;
+    color: #fff;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.admin-form button,
+.admin-block button,
+.admin-toolbar button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #ff6a00;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.admin-form button:hover,
+.admin-block button:hover,
+.admin-toolbar button:hover {
+    background: #ff8a33;
+}
+
+.admin-error {
+    color: #ff5555;
+    font-size: 0.9rem;
+}
+
+.admin-status {
+    font-size: 0.9rem;
+    color: #7ed957;
+    min-height: 1.2em;
+}
+
+.admin-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.admin-save {
+    background: #7ed957 !important;
+    color: #111 !important;
+}
+
+.admin-logout {
+    background: #444 !important;
+}
+
+.admin-block {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+}
+
+.admin-section-block {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ff6a00;
+}
+
+.admin-section-header {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.admin-section-header .section-title-input {
+    flex: 1;
+    min-width: 160px;
+}
+
+.admin-section-header select {
+    width: auto;
+}
+
+.admin-section-header .remove-section-btn {
+    background: #a83232;
+    margin-top: 0;
+}
+
+.admin-item-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px;
+    align-items: center;
+}
+
+.admin-item-row-menu .item-name-input {
+    flex: 2;
+}
+
+.admin-item-row-menu .item-price-input {
+    flex: 1;
+    max-width: 100px;
+}
+
+.admin-item-row-menu .item-desc-input {
+    flex: 2;
+}
+
+.remove-item-btn {
+    background: #a83232 !important;
+    margin-top: 0 !important;
+    padding: 6px 10px !important;
+}
