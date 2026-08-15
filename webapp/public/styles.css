@@ -1,0 +1,169 @@
+/* Fuente y estilo general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(160deg, #1a0500 0%, #4d1400 20%, #992200 45%, #cc3d00 65%, #ff6a00 85%, #ffcc00 100%);
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff6a00, #ff0000);
+}
+
+.logo {
+    max-width: 180px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.slogan {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Secciones del menú - colores rotativos inspirados en el logo */
+.section:nth-child(4n+1) { --accent: #ff4d4d; }
+.section:nth-child(4n+2) { --accent: #ff9800; }
+.section:nth-child(4n+3) { --accent: #ffcc00; }
+.section:nth-child(4n+4) { --accent: #7ed957; }
+
+.section {
+    background: linear-gradient(145deg, color-mix(in srgb, var(--accent, #ff6a00) 22%, #1b1b1b), color-mix(in srgb, var(--accent, #ff6a00) 8%, #0f0f0f));
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid var(--accent, #ff6a00);
+    border-left: 6px solid var(--accent, #ff6a00);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+.section h2 {
+    color: var(--accent, #ffcc00);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 10px auto;
+}
+
+.section ul {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.section ul li::before {
+    content: "•";
+    color: var(--accent, #ff6a00);
+    position: absolute;
+    left: 0;
+}
+
+/* Items de menú con precio */
+.menu-list {
+    margin-left: 0;
+}
+
+.menu-item {
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+
+.menu-item::before {
+    content: none;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    color: var(--accent, #ffcc00);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.item-desc {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-top: 2px;
+}
+
+/* Info de contacto */
+.info p {
+    margin-bottom: 5px;
+}
+
+.info a {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.info a:hover {
+    color: #fff;
+}
+
+/* QR */
+.qr-section {
+    text-align: center;
+}
+
+.qr-section p {
+    margin-bottom: 10px;
+}
+
+.qr {
+    max-width: 180px;
+    border: 2px solid #ff6a00;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
