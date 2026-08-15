@@ -30,12 +30,10 @@ const DEFAULT_MENU = {
       id: 'gomitas',
       title: 'Gomitas Enchiladas',
       image: 'imagen/Gomita.png',
-      type: 'simple',
+      type: 'menu',
       items: [
-        'Gomitas mixtas con chile',
-        'Gomitas con chamoy',
-        'Gomitas con tamarindo',
-        'Gomitas extra picantes'
+        { name: 'Gomitas pequeñas', price: '$1,00', desc: '10 gomitas pequeñas con chamoy, tajín, mango' },
+        { name: 'Gomitas medianas', price: '$1,50', desc: '15 gomitas medianas con chamoy, tajín, mango' }
       ]
     },
     {
@@ -78,12 +76,8 @@ const DEFAULT_MENU = {
       id: 'bebidas',
       title: 'Bebidas',
       image: null,
-      type: 'menu',
-      items: [
-        { name: 'Gaseosas', price: '$0,50', desc: '' },
-        { name: 'Infusiones', price: '$0,75', desc: '' },
-        { name: 'Café instantáneo', price: '$1,00', desc: '' }
-      ]
+      type: 'simple',
+      items: ['Gaseosas', 'Te', 'Infusiones', 'Café']
     }
   ],
   contact: {
