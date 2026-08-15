@@ -78,8 +78,12 @@ const DEFAULT_MENU = {
       id: 'bebidas',
       title: 'Bebidas',
       image: null,
-      type: 'simple',
-      items: ['Gaseosas', 'Te', 'Infusiones', 'Café']
+      type: 'menu',
+      items: [
+        { name: 'Gaseosas', price: '$0,50', desc: '' },
+        { name: 'Infusiones', price: '$0,75', desc: '' },
+        { name: 'Café instantáneo', price: '$1,00', desc: '' }
+      ]
     }
   ],
   contact: {
