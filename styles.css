@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(160deg, #1a0500 0%, #4d1400 20%, #992200 45%, #cc3d00 65%, #ff6a00 85%, #ffcc00 100%);
+    background: linear-gradient(160deg, #1d0600 0%, #4e1501 20%, #992200 45%, #cc3d00 65%, #ff6a00 85%, #ffcc00 100%);
     background-attachment: fixed;
     color: #fff;
 }
@@ -57,7 +57,7 @@ body {
     margin-bottom: 15px;
     border: 1px solid var(--accent, #ff6a00);
     border-left: 6px solid var(--accent, #ff6a00);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 4px 14px rgba(15, 211, 113, 0.45);
 }
 
 .section h2 {
