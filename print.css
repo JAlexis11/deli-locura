@@ -53,9 +53,11 @@ body {
 
 .sheet-header {
     text-align: center;
-    border-bottom: 2px solid #1a1a1a;
-    padding-bottom: 10px;
-    margin-bottom: 14px;
+    padding: 14px 10px 12px 10px;
+    margin: -18px -22px 14px -22px;
+    background: linear-gradient(160deg, #4d1400 0%, #992200 35%, #cc3d00 60%, #ff6a00 85%, #ffcc00 100%);
+    border-radius: 0;
+    border-bottom: 3px solid #1a1a1a;
 }
 
 .sheet-logo {
@@ -68,11 +70,12 @@ body {
     font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: #fff;
 }
 
 .sheet-header p {
     font-size: 0.85rem;
-    color: #444;
+    color: #fff;
 }
 
 .sheet-columns {
