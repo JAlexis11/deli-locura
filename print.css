@@ -49,6 +49,7 @@ body {
     margin: 0 auto;
     border: 1px solid #1a1a1a;
     padding: 18px 22px;
+    background: linear-gradient(160deg, #fff3e0 0%, #ffe8cc 40%, #ffe0b8 70%, #ffd9a3 100%);
 }
 
 .sheet-header {
