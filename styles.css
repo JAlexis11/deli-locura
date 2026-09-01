@@ -37,6 +37,21 @@ body {
     margin-top: 5px;
 }
 
+.print-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.print-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
 /* Contenedor principal */
 .container {
     max-width: 1000px;
